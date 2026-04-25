@@ -17,6 +17,7 @@ target_link_libraries(${LIGHTLYSHADERS}
     Qt6::Core
     Qt6::CorePrivate
     Qt6::Gui
+    Qt6::GuiPrivate
     Qt6::DBus
 
     KWin::kwin

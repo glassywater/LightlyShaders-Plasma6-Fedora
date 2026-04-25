@@ -1,6 +1,6 @@
 [English](README.md) | 中文
 
-## 此分支仅支持Plasma 6.2.9及之前的版本。如您是Plasma 6.3用户，请移步[此分支](https://github.com/walterfang12/LightlyShaders-Plasma6/tree/plasma-6.3)。
+## 此分支仅支持Plasma 6.3，旧版本用户请移步[主分支](https://github.com/walterfang12/LightlyShaders-Plasma6/)
 
 # LightlyShaders v3.0
 

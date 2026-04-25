@@ -28,6 +28,8 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Gui
     Core
+    CorePrivate
+    GuiPrivate
     DBus
     UiTools
     Widgets
@@ -66,7 +68,7 @@ find_package(KWin REQUIRED COMPONENTS
     kwineffects
 )
 
-find_package(KDecoration2 REQUIRED)
+find_package(KDecoration3 REQUIRED)
 
 find_package(KWinDBusInterface CONFIG REQUIRED)
 
