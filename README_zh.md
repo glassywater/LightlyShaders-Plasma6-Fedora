@@ -1,16 +1,14 @@
 [English](README.md) | 中文
 
-## 此分支可在 Plasma 6.7（KWin 6.7）上编译并运行。
-
 # LightlyShaders v3.0
 
- 此效果与已有的 Plasma 特效一起正常工作。支持 KDE Plasma 6（已在 6.7 上测试）。
+ 此效果与已有的 Plasma 特效一起正常工作。支持 KDE Plasma 版本 >= 6.7。
 
  ![default](screenshot.png)
 
 # 依赖关系：
 
- Plasema版本>=6.0。 
+ Plasma版本>=6.7。 
 
  您将需要qt6、kf6和kwin开发包。 
 
@@ -21,7 +19,7 @@
 # 手动安装 
 
 ```bash
-git clone https://github.com/walterfang12/LightlyShaders-Plasma6 && cd LightlyShaders
+git clone https://github.com/walterfang12/LightlyShaders-Plasma6 && cd LightlyShaders-Plasma6
 mkdir qt6build && cd qt6build
 cmake ../ -DCMAKE_INSTALL_PREFIX=/usr && make && sudo make install
 ```
