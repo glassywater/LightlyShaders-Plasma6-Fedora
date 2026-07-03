@@ -23,7 +23,7 @@ You will need qt6, kf6 and kwin development packages.
 ```
 git clone https://github.com/walterfang12/LightlyShaders-Plasma6
 
-cd LightlyShaders;
+cd LightlyShaders-Plasma6;
 
 mkdir qt6build; cd qt6build; cmake ../ -DCMAKE_INSTALL_PREFIX=/usr && make && sudo make install
 ```
