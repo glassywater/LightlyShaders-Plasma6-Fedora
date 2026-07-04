@@ -1,0 +1,14 @@
+# Build directories
+/qt6build/
+/build/
+build/
+
+# Editor / IDE
+*.user
+*.kate-swp
+.vscode/
+.idea/
+
+# Compiled objects
+*.o
+*.so

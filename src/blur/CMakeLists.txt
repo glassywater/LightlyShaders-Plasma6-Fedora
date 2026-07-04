@@ -18,6 +18,8 @@ target_link_libraries(lightlyshaders_blur PRIVATE
 
     KDecoration3::KDecoration
 
+    XCB::XCB
+
     lshelper
 )
 

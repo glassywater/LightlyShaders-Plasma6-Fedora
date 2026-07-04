@@ -1,17 +1,15 @@
 English | [中文](README_zh.md)
 
-##This branch only supports Plasma 6.3. For users of older versions, please move to the [main branch](https://github.com/walterfang12/LightlyShaders-Plasma6/)
-
 # LightlyShaders v3.0
 
- This effect works correctly with stock Plasma effects.Supports KDE Plasma 6.
+ This effect works correctly with stock Plasma effects. Supports KDE Plasma Version >= 6.7
 
  ![default](screenshot.png)
 
 
 # Dependencies:
  
-Plasma Version >= 6.0.
+Plasma Version >= 6.7.
  
 You will need qt6, kf6 and kwin development packages.
 
@@ -23,7 +21,7 @@ You will need qt6, kf6 and kwin development packages.
 ```
 git clone https://github.com/walterfang12/LightlyShaders-Plasma6
 
-cd LightlyShaders;
+cd LightlyShaders-Plasma6;
 
 mkdir qt6build; cd qt6build; cmake ../ -DCMAKE_INSTALL_PREFIX=/usr && make && sudo make install
 ```

@@ -19,8 +19,6 @@
 namespace KWin
 {
 
-class BlurManagerInterface;
-
 struct BlurRenderData
 {
     /// Temporary render targets needed for the Dual Kawase algorithm, the first texture
@@ -53,8 +51,7 @@ public:
     static bool enabledByDefault();
 
     void reconfigure(ReconfigureFlags flags) override;
-    void prePaintScreen(ScreenPrePaintData &data, std::chrono::milliseconds presentTime) override;
-    void prePaintWindow(RenderView *view, EffectWindow *w, WindowPrePaintData &data, std::chrono::milliseconds presentTime) override;
+    void prePaintScreen(ScreenPrePaintData &data) override;
     void drawWindow(const RenderTarget &renderTarget, const RenderViewport &viewport, EffectWindow *w, int mask, const Region &region, WindowPaintData &data) override;
 
     bool provides(Feature feature) override;
@@ -121,8 +118,6 @@ private:
 
     bool m_valid = false;
     long net_wm_blur_region = 0;
-    Region m_paintedArea; // keeps track of all painted areas (from bottom to top)
-    Region m_currentBlur; // keeps track of the currently blured area of the windows(from bottom to top)
     LogicalOutput *m_currentScreen = nullptr;
 
     size_t m_iterationCount; // number of times the texture will be downsized to half size
@@ -149,9 +144,6 @@ private:
 
     QMap<EffectWindow *, QMetaObject::Connection> windowBlurChangedConnections;
     std::unordered_map<EffectWindow *, BlurEffectData> m_windows;
-
-    static BlurManagerInterface *s_blurManager;
-    static QTimer *s_blurManagerRemoveTimer;
 };
 
 inline bool BlurEffect::provides(Effect::Feature feature)
